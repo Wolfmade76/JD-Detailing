@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+a {
+    font-size: 30px;
+    color: red;
+    text-decoration: none;
+}
+
+a:hover {
+    transform: scale(1.1);
+    text-decoration: underline;
+}
+
+.body {
+    background-color: black;
+}
+
+/*LANDING PAGE*/
+
+.landing__body {
+    width: 100%;
+    background-image: url('assets/landing img.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    margin: 0;
+
+}
+
+.logo__img {
+    height: 120px;
+    width: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    size: 100%;
+}
+
+.logo__container {
+    height: 200px;
+    width: 100%;
+    /* border: 1px solid white; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.logo__box {
+    height: 200px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid blue; */
+    right: 60px;
+}
+
+.button__container {
+    width: 100%;
+    height: 560px;
+    /* border: 1px solid green; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.enter__button {
+    height: 100px;
+    width: 200px;
+    background-color: black;
+    color: red;
+    font-size: 30px;
+    border: none;
+}
+
+.enter__button:hover {
+    transform: scale(1.1);
+}
+
+/*NAV BAR*/
+#nav {
+    display: flex;
+    /* border: 1px solid green; */
+    width: 100%;
+    height: 300px;
+    background-color: black;
+}
+
+.nav__container {
+    /* border: 1px solid blue; */
+    background-color: black;
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.links {
+    /* border: 1px solid black; */
+    width: 500px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.logo__box1 {
+    border: 1px solid black;
+    width: 500px;
+    height: 300px;
+}
+
+.logo__img1 {
+    height: 120px;
+    width: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    size: 100%;
+    margin-top: 10px;
+}
+
+/*ABOUT ME */
+
+#about {
+    margin-top: 20px;
+    width: 100%;
+    height: 1200px;
+    background-color: black;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: row;
+}
+
+.about__me--box {
+    width: 50%;
+    height: 100%;
+    border: 1px solid blue;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img__box {
+    width: 50%;
+    height: 100%;
+    border: 1px solid green;
+}
+
+.personal__img {
+    margin-top: 10px;
+    height: 500px;
+    width: 550px;
+    border-radius: 50%;
+    overflow: hidden;
+    size: 100%;
+}
+
+.para__container {
+    margin-top: 28px;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.about__me--para {
+    margin: 12px 12px;
+    color: white;
+    font-size: 30px;
+    line-height: 60px;
+}
+
+/*PRICING*/
+
+#pricing {
+    margin-top: 20px;
+    width: 100%;
+    height: 700px;
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.box {
+    margin-top: 40px;
+    border: 1px solid red;
+    height: 500px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    border-radius: 20px;
+}
+
+.plan {
+    font-size: 42px;
+    /* margin-bottom: 22px; */
+    color: white;
+}
+
+.price{
+    color: red;
+    font-size: 32px;
+}
+
+.pricing__details {
+    font-size: 22px;
+    margin: 12px auto;
+    color: white;
+}
+
+.button__box {
+    height: 60px;
+    width: 140px;
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 10px;
+}
+
+
+
+
+
+.pricing__button {
+    border: 1px solid red;
+    height: 40px;
+    width: 120px;
+    background-color: red;
+    color: black;
+    border-radius: 40px;
+    font-size: 20px;
+}
+
+.pricing__button:hover{
+    transform: scale(1.1);
+}
+
+@media(max-width: 680px){
+    .logo__box{width: 100px;
+    height: 80px;}
+}
+
+@media(max-width: 516px){
+    .landing__body{
+        width: 100%;
+    }.logo__img{
+        height: 80px;
+        width: 80px;
+    }
+    .logo__box{
+        width: 100px;
+    }
+}
